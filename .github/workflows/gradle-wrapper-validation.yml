@@ -2,13 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 name: Gradle wrapper validation
 on:
-  pull_request:
-    paths:
-      - '**/gradle/wrapper/**'
-  push:
-    paths:
-      - '**/gradle/wrapper/**'
-
+  workflow_dispatch:
 permissions:
   contents: read
 
